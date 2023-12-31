@@ -1,5 +1,5 @@
 # ai-image-classification
-This repo contains the code to build an AI Image classification. The application uses Python, PyTorch, Flask, ResNet and Docker.
+This repo contains the code to build an image classification app powered by AI. The application runs on Docker and uses Python, PyTorch, Flask, and ResNet.
 
 ### prerequisites
 - Python
