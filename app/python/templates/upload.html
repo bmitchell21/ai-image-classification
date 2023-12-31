@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Classification Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+    <h1>Image Classification Tool</h1>
+        <p>This tool uses a pre-trained ResNet model to classify images, Kubernetes, and Flask.<br>
+        Below you can upload a png or jpeg image for processing.</p>
+
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/png, image/jpeg"><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="response"></p>
+    </div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var formData = new FormData(this);
+            fetch('/upload', {
+                method: 'POST',
+                body: formData
+            }).then(response => response.text()).then(data => {
+                document.getElementById('response').innerText = data;
+            }).catch(err => {
+                console.error(err);
+            });
+        });
+    </script>
+</body>
+</html>
