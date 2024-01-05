@@ -72,7 +72,6 @@ This repo contains the code to build an image classification app powered by AI. 
 8. Navigate to infra/main.tf.
     - Update the cluster name.
         - Note that if you change the version of the Terraform provided modules, you may experience Terraform versioning errors.
-    - 
     - Create a new branch.
     - Commit and push your changes to the branch.
 
