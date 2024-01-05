@@ -1,0 +1,31 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "cicd1",
+            "Effect": "Allow",
+            "Action": [
+                "iam:*",
+                "cloudformation:*",
+                "ec2:*",
+                "ecr:*",
+                "elasticloadbalancing:*",
+                "kms:*",
+                "logs:*",
+                "eks:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "cicd2",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::your-bucket-name-here",
+                "arn:aws:s3:::your-bucket-name-here/*"
+            ]
+        }
+    ]
+}
