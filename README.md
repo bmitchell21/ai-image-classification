@@ -1,24 +1,27 @@
-ai-image-classification
+# Note this application is for fun and development purposes ***only***
+
+# ai-image-classification
+
 This repo contains the code to build an image classification app powered by AI. The application has been built to run using Docker locally or EKS in AWS. The application also uses Python, PyTorch, Flask, and ResNet.
 
-Prerequisites for a local run:
-Python
-Pip
-Docker
-Github account
-Basic understanding of git
+## Prerequisites for a local run:
+- Python
+- Pip
+- Docker
+- GitHub account
+- Basic understanding of git
 
-Prerequisities for a deployment to EKS:
-AWS account
-AWS CLI
-Terraform Cloud account with an organization
-Github account
-Python
-Pip
-Docker
-Basic understanding of git and Terraform
+## Prerequisities for a deployment to EKS:
+- AWS account
+- AWS CLI
+- Terraform Cloud account with an organization
+- GitHub account
+- Python
+- Pip
+- Docker
+- Basic understanding of git and Terraform
 
-To use this application locally without deploying to EKS, follow the steps below:
+## To use this application locally without deploying to EKS, follow the steps below:
 
 1. Clone this repo
 
@@ -33,9 +36,7 @@ To use this application locally without deploying to EKS, follow the steps below
 5. Upload a png or jpeg image
 
 
-To deploy this application to EKS, follow the steps below:
-
-# Note this application is for fun and development purposes ***only***
+## To deploy this application to EKS, follow the steps below:
 
 1. In GitHub, [Fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repo
 
@@ -127,7 +128,7 @@ To deploy this application to EKS, follow the steps below:
     - Delete the bucket
     - Delete the IAM user
 
-Awesome job deploying an AI image classification app to AWS EKS! 
+# Awesome job deploying an AI image classification app to AWS EKS! 
 
 
 
